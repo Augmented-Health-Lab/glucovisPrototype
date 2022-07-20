@@ -1,7 +1,7 @@
 {
   "name": "Glucovis Prototype",
   "version": "0.1.0",
-  "homepage": "https://Augmented-Health-Lab.github.io/glucovisPrototype",
+  "homepage": "https://augmented-health-lab.github.io/glucovisPrototype/",
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
