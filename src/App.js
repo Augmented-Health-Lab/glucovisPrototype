@@ -1,8 +1,6 @@
-// import { Routes, Route, Link, useHistory } from "react-router-dom";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, useHistory } from "react-router-dom";
 import React, { createContext, useEffect, useState } from 'react';
-// import { LineChartOutlined, AreaChartOutlined, SafetyOutlined, PicLeftOutlined, QuestionCircleOutlined } from '@ant-design/icons';
-import { LineChartOutlined, AreaChartOutlined, PicLeftOutlined, QuestionCircleOutlined } from '@ant-design/icons';
+import { LineChartOutlined, AreaChartOutlined, SafetyOutlined, PicLeftOutlined, QuestionCircleOutlined } from '@ant-design/icons';
 import AgpView from "./views/AgpView";
 import AboutView from "./views/AboutView";
 import OverlayView from "./views/OverlayView";
@@ -28,7 +26,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <span>Ambulatory Glucose Profile Chart</span>&nbsp;for &nbsp;
+        <span>Report </span>&nbsp;for &nbsp;
         <select className="select-person" onChange={(e) => setPerson(e.target.value)}>
           {
             persons.map((item, index) => {
@@ -45,10 +43,10 @@ function App() {
           <Link className={current === 0 ? 'active' : ''} to="/" onClick={() => setCurrent(0)}>
             <AreaChartOutlined style={{color: '#7A3FD7' }}/> AGP
           </Link>
-          <Link className={current === 1 ? 'active' : ''} to="overlay" onClick={() => setCurrent(1)}>
+          <Link className={current === 1 ? 'active' : ''} to="/overlay" onClick={() => setCurrent(1)}>
             <LineChartOutlined style={{color: '#7A3FD7' }}/> Overlay
           </Link>
-          <Link className={current === 2 ? 'active' : ''} to="glucomine" onClick={() => setCurrent(2)}>
+          <Link className={current === 2 ? 'active' : ''} to="/glucomine" onClick={() => setCurrent(2)}>
             <PicLeftOutlined style={{color: '#7A3FD7' }}/> GlucoMine
           </Link>
           <div className='App-menu-bottom'>
