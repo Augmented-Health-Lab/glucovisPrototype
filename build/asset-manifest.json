@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/glucovisPrototype/static/css/main.43bf6f96.css",
-    "main.js": "/glucovisPrototype/static/js/main.8a46833a.js",
+    "main.css": "/glucovisPrototype/static/css/main.9e62688a.css",
+    "main.js": "/glucovisPrototype/static/js/main.0fff22da.js",
     "static/js/787.28cb0dcd.chunk.js": "/glucovisPrototype/static/js/787.28cb0dcd.chunk.js",
     "index.html": "/glucovisPrototype/index.html",
-    "main.43bf6f96.css.map": "/glucovisPrototype/static/css/main.43bf6f96.css.map",
-    "main.8a46833a.js.map": "/glucovisPrototype/static/js/main.8a46833a.js.map",
+    "main.9e62688a.css.map": "/glucovisPrototype/static/css/main.9e62688a.css.map",
+    "main.0fff22da.js.map": "/glucovisPrototype/static/js/main.0fff22da.js.map",
     "787.28cb0dcd.chunk.js.map": "/glucovisPrototype/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.43bf6f96.css",
-    "static/js/main.8a46833a.js"
+    "static/css/main.9e62688a.css",
+    "static/js/main.0fff22da.js"
   ]
 }
