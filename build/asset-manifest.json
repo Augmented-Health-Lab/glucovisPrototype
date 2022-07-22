@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.6d4c066c.css",
-    "main.js": "/react-gh-pages/static/js/main.f828b406.js",
-    "static/js/787.28cb0dcd.chunk.js": "/react-gh-pages/static/js/787.28cb0dcd.chunk.js",
-    "index.html": "/react-gh-pages/index.html",
-    "main.6d4c066c.css.map": "/react-gh-pages/static/css/main.6d4c066c.css.map",
-    "main.f828b406.js.map": "/react-gh-pages/static/js/main.f828b406.js.map",
-    "787.28cb0dcd.chunk.js.map": "/react-gh-pages/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/glucovisPrototype/static/css/main.43bf6f96.css",
+    "main.js": "/glucovisPrototype/static/js/main.93923696.js",
+    "static/js/787.28cb0dcd.chunk.js": "/glucovisPrototype/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/glucovisPrototype/index.html",
+    "main.43bf6f96.css.map": "/glucovisPrototype/static/css/main.43bf6f96.css.map",
+    "main.93923696.js.map": "/glucovisPrototype/static/js/main.93923696.js.map",
+    "787.28cb0dcd.chunk.js.map": "/glucovisPrototype/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d4c066c.css",
-    "static/js/main.f828b406.js"
+    "static/css/main.43bf6f96.css",
+    "static/js/main.93923696.js"
   ]
 }

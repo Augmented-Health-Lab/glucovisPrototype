@@ -39,8 +39,8 @@ function App() {
       </header>
       <div className="App-container">
         <div className="App-menu">
-          <h1>CHARTS</h1>
-          <Link className={current === 0 ? 'active' : ''} to="/" onClick={() => setCurrent(0)}>
+          <h1>PLOTS</h1>
+          <Link className={current === 0 ? 'active' : ''} to="/agp" onClick={() => setCurrent(0)}>
             <AreaChartOutlined style={{color: '#7A3FD7' }}/> AGP
           </Link>
           <Link className={current === 1 ? 'active' : ''} to="/overlay" onClick={() => setCurrent(1)}>
@@ -58,7 +58,7 @@ function App() {
         <div className="App-content">
           <Context.Provider value={person}>
             <Routes>
-              <Route path="/" element={<AgpView />} />
+              <Route path="/agp" element={<AgpView />} />
               <Route path="/overlay" element={<OverlayView />} />
               <Route path="/about" element={<AboutView />} />
               <Route path="/glucomine" element={<GlucoMineView />} />
