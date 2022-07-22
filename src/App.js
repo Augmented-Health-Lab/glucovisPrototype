@@ -51,17 +51,17 @@ function App() {
           <HomeOutlined style={{color: '#7A3FD7' }}/> Home
           </Link> */}
           <h1>CHARTS</h1>
-          <Link className={current === 0 ? 'active' : ''} to="/glucovisPrototype/agp" onClick={() => setCurrent(0)}>
+          <Link className={current === 0 ? 'active' : ''} to="/agp" onClick={() => setCurrent(0)}>
             <AreaChartOutlined style={{color: '#9655FF', lineHeight: '48px', padding: '0px 10px', verticalAlign:'text-bottom'}}/> AGP
           </Link>
-          <Link className={current === 1 ? 'active' : ''} to="/glucovisPrototype/overlay" onClick={() => setCurrent(1)}>
+          <Link className={current === 1 ? 'active' : ''} to="/overlay" onClick={() => setCurrent(1)}>
             <LineChartOutlined style={{color: '#9655FF', lineHeight: '48px', padding: '0px 10px', verticalAlign:'text-top'}}/> Overlay
           </Link>
-          <Link className={current === 2 ? 'active' : ''} to="/glucovisPrototype/glucomine" onClick={() => setCurrent(2)}>
+          <Link className={current === 2 ? 'active' : ''} to="/glucomine" onClick={() => setCurrent(2)}>
             <PicLeftOutlined style={{color: '#9655FF', lineHeight: '48px', padding: '0px 10px', verticalAlign:'text-top'}}/> GlucoMine
           </Link>
           <div className='App-menu-bottom'>
-            <Link className={current === 3 ? 'active' : ''} to="/glucovisPrototype/about" onClick={() => setCurrent(3)}>
+            <Link className={current === 3 ? 'active' : ''} to="/about" onClick={() => setCurrent(3)}>
               <QuestionCircleOutlined style={{color: '#9655FF', lineHeight: '48px', padding: '0px 10px', verticalAlign:'text-top'}}/> About
             </Link>
           </div>
@@ -70,10 +70,10 @@ function App() {
           <Context.Provider value={person}>
             <Routes>
               <Route path="/" element={<LandingPage />} />
-              <Route path="/glucovisPrototype/agp" element={<AgpView />} />
-              <Route path="/glucovisPrototype/overlay" element={<OverlayView />} />
-              <Route path="/glucovisPrototype/glucomine" element={<GlucoMineView />} />
-              <Route path="/glucovisPrototype/about" element={<AboutView />} />
+              <Route path="/agp" element={<AgpView />} />
+              <Route path="/overlay" element={<OverlayView />} />
+              <Route path="/glucomine" element={<GlucoMineView />} />
+              <Route path="/about" element={<AboutView />} />
             </Routes>
           </Context.Provider>
         </div>
