@@ -29,9 +29,7 @@ function App() {
     <div className="App">
       
       <header className="App-header">
-        <Link className={'App-title'} to="/" onClick={() => setCurrent(4)}>
-          <title className="App-title">glucovis</title>
-        </Link>
+        <title className="App-title">glucovis</title>
         <div className='App-header-container'>
           <span>Report </span> &nbsp; for &nbsp;
           <select className="select-person" onChange={(e) => setPerson(e.target.value)}>
@@ -47,9 +45,9 @@ function App() {
       </header>
       <div className="App-container">
         <div className="App-menu">
-        {/* <Link className={current === 4 ? 'active' : ''} to="/" onClick={() => setCurrent(4)}>
+        <Link className={current === 4 ? 'active' : ''} to="/" onClick={() => setCurrent(4)}>
           <HomeOutlined style={{color: '#7A3FD7' }}/> Home
-          </Link> */}
+          </Link>
           <h1>CHARTS</h1>
           <Link className={current === 0 ? 'active' : ''} to="/agp" onClick={() => setCurrent(0)}>
             <AreaChartOutlined style={{color: '#9655FF', lineHeight: '48px', padding: '0px 10px', verticalAlign:'text-bottom'}}/> AGP
@@ -69,7 +67,7 @@ function App() {
         <div className="App-content">
           <Context.Provider value={person}>
             <Routes>
-              <Route path="/" element={<LandingPage />} />
+              <Route path="/home" element={<LandingPage />} />
               <Route path="/agp" element={<AgpView />} />
               <Route path="/overlay" element={<OverlayView />} />
               <Route path="/glucomine" element={<GlucoMineView />} />
