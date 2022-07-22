@@ -1,6 +1,7 @@
 import { Routes, Route, Link, useHistory } from "react-router-dom";
 import React, { createContext, useEffect, useState } from 'react';
 import { LineChartOutlined, AreaChartOutlined, SafetyOutlined, PicLeftOutlined, QuestionCircleOutlined } from '@ant-design/icons';
+import LandingPage from "./views/LandingPage";
 import AgpView from "./views/AgpView";
 import AboutView from "./views/AboutView";
 import OverlayView from "./views/OverlayView";
@@ -11,7 +12,7 @@ import { getSummary } from './api/api';
 export const Context = createContext(1);
 
 function App() {
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState();
   const [persons, setPersons] = useState([]);
   const [person, setPerson] = useState('1');
 
@@ -25,17 +26,21 @@ function App() {
 
   return (
     <div className="App">
+      
       <header className="App-header">
-        <span>Report </span>&nbsp;for &nbsp;
-        <select className="select-person" onChange={(e) => setPerson(e.target.value)}>
-          {
-            persons.map((item, index) => {
-              return (
-                <option key={index} value={item.split(' ')[1]}>{item}</option>
-              )
-            })
-          }
-        </select>
+        <title className="App-title">glucovis</title>
+        <div className='App-header-container'>
+          <span>Report </span> &nbsp; for &nbsp;
+          <select className="select-person" onChange={(e) => setPerson(e.target.value)}>
+            {
+              persons.map((item, index) => {
+                return (
+                  <option key={index} value={item.split(' ')[1]}>{item}</option>
+                  )
+                })
+            }
+          </select>
+        </div>
       </header>
       <div className="App-container">
         <div className="App-menu">
@@ -58,10 +63,11 @@ function App() {
         <div className="App-content">
           <Context.Provider value={person}>
             <Routes>
+              <Route path="/" element={<LandingPage />} />
               <Route path="/agp" element={<AgpView />} />
               <Route path="/overlay" element={<OverlayView />} />
-              <Route path="/about" element={<AboutView />} />
               <Route path="/glucomine" element={<GlucoMineView />} />
+              <Route path="/about" element={<AboutView />} />
             </Routes>
           </Context.Provider>
         </div>
