@@ -50,11 +50,11 @@ function OverlayView() {
       { title: 'SENSOR USAGE', value: `${Number(raw['data']['Sensor Usage (% available data)']).toFixed(2)}%`, unit: '' },
     ])
     setRange([
-      `44%`,
-      `44%`,
-      `20%`,
-      `43%`,
-      `44%`
+      5, // `44%`,
+      27, // `44`,
+      50, // `20`,
+      15, // `43`,
+      3 // `44`
     ])
   }
 
@@ -212,7 +212,7 @@ function OverlayView() {
           </div>
         </div>
         <div className="App-content-bottom-right">
-          <h1>Time in Range</h1>
+          {/* <h1>Time in Range</h1> */}
           <div className="App-content-bottom-right-summary">
             <TimeinRange value={range} />
           </div>
