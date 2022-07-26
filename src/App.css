@@ -24,7 +24,7 @@ body {
   /* width: 201px; */
   width: 18%;
   /* height: 70px; */
-  background-color: white;
+  background-color: rgb(142, 142, 142);
   padding: 15px;
   display: flex;
   flex-direction: column;
