@@ -29,7 +29,7 @@ function App() {
     <div className="App">
       
       <header className="App-header">
-      <Link className={current === 4 ? 'active' : ''} to="/glucovisPrototype/" onClick={() => setCurrent(4)}> 
+      <Link className={current === 4 ? 'active' : ''} to="/glucovisPrototype/home" onClick={() => setCurrent(4)}> 
         <title className="App-title">glucovis</title>
       </Link>
         
@@ -70,7 +70,7 @@ function App() {
         <div className="App-content">
           <Context.Provider value={person}>
             <Routes>
-              <Route path="/glucovisPrototype/" element={<LandingPage />} />
+              <Route path="/glucovisPrototype/home" element={<LandingPage />} />
               <Route path="/glucovisPrototype/agp" element={<AgpView />} />
               <Route path="/glucovisPrototype/overlay" element={<OverlayView />} />
               <Route path="/glucovisPrototype/glucomine" element={<GlucoMineView />} />
