@@ -29,7 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: Gotham;
+  font-family: 'Gotham', sans-serif;
   font-size: 48px;
   font-weight: 700;
   line-height: 53px;
