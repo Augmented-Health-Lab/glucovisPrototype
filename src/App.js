@@ -48,9 +48,9 @@ function App() {
       </header>
       <div className="App-container">
         <div className="App-menu">
-        <Link className={current === 4 ? 'active' : ''} to="/glucovisPrototype/" onClick={() => setCurrent(4)}>
+        {/* <Link className={current === 4 ? 'active' : ''} to="/glucovisPrototype/" onClick={() => setCurrent(4)}>
           <HomeOutlined style={{color: '#9655FF', lineHeight: '48px', padding: '0px 10px', verticalAlign:'text-bottom'}}/> Home
-          </Link>
+          </Link> */}
           <h1>CHARTS</h1>
           <Link className={current === 0 ? 'active' : ''} to="/glucovisPrototype/agp" onClick={() => setCurrent(0)}>
             <AreaChartOutlined style={{color: '#9655FF', lineHeight: '48px', padding: '0px 10px', verticalAlign:'text-bottom'}}/> AGP
