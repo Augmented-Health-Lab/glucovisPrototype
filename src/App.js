@@ -29,7 +29,10 @@ function App() {
     <div className="App">
       
       <header className="App-header">
+      <Link className={current === 4 ? 'active' : ''} to="/glucovisPrototype/home" onClick={() => setCurrent(4)}> 
         <title className="App-title">glucovis</title>
+      </Link>
+        
         <div className='App-header-container'>
           <span>Report </span> &nbsp; for &nbsp;
           <select className="select-person" onChange={(e) => setPerson(e.target.value)}>
