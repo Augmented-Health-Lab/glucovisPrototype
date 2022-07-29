@@ -29,6 +29,12 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run deploy`
+
+Deploys to [https://augmented-health-lab.github.io/glucovisPrototype/](https://augmented-health-lab.github.io/glucovisPrototype/).
+`git push` to update prototype.
+
+
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
