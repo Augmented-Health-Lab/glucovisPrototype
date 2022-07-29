@@ -31,7 +31,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `npm run deploy`
 
-Deploys to [https://augmented-health-lab.github.io/glucovisPrototype/](https://augmented-health-lab.github.io/glucovisPrototype/).
+Deploys to [https://augmented-health-lab.github.io/glucovisPrototype/](https://augmented-health-lab.github.io/glucovisPrototype/). \
 `git push` to update prototype.
 
 
