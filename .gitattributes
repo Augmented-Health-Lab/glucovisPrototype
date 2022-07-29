@@ -1,4 +1,0 @@
-build/data/Sweetgoals_json/SG_persons_alldates_agp.json filter=lfs diff=lfs merge=lfs -text
-build/data/Sweetgoals_json/SG_persons_alldates_overlay.json filter=lfs diff=lfs merge=lfs -text
-build/data/Tidepool_json/persons_alldates_agp.json filter=lfs diff=lfs merge=lfs -text
-build/data/Tidepool_json/persons_alldates_overlay.json filter=lfs diff=lfs merge=lfs -text
