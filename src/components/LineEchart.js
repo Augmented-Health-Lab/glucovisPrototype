@@ -6,8 +6,8 @@ function LineEchart(props) {
     title: {
       text: "GLUCOSE"
     },
-    lagend: {
-      data: props.lagend || []
+    legend: {
+      data: props.legend || []
     },
     dataset: [
       {
@@ -27,6 +27,11 @@ function LineEchart(props) {
     xAxis: {
       type: 'category',
       nameLocation: 'middle',
+      axisLabel: {
+        interval: 35,},
+      min:0,
+      max:288,
+      
     },
     yAxis: {
       name: 'mg/dL',
