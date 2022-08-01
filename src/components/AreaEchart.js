@@ -40,9 +40,11 @@ function AreaEchart(props) {
       type: 'category',
       nameLocation: 'middle',
       axisLabel: {
-        interval: 35,},
-      min:0,
-      max:288,
+        interval: 2,},
+      // axisTick: {
+      //   interval: 1,},
+      // min:0,
+      // max:288,
     },
     yAxis: {
       name: 'mg/dL',
