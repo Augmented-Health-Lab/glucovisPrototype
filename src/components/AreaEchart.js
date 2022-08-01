@@ -39,8 +39,6 @@ function AreaEchart(props) {
     xAxis: {
       type: 'category',
       nameLocation: 'middle',
-      axisLabel: {
-        interval: 2,},
     },
     yAxis: {
       name: 'mg/dL',
