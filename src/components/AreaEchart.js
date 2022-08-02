@@ -39,16 +39,24 @@ function AreaEchart(props) {
     xAxis: {
       type: 'category',
       nameLocation: 'middle',
+      min:0,
+      max:26,
+      axisLabel:{
+        interval: 2,
+      }
     },
     yAxis: {
       name: 'mg/dL',
       type: 'value',
       interval: 50,
       zlevel: 1,
+      min:0,
+      max:401,
     },
     series: [
       {
         type: 'line',
+        connectNulls: false,
         symbol: 'none',
         datasetId: '0',
         color: '#EAD2FF',
@@ -65,6 +73,7 @@ function AreaEchart(props) {
       },
       {
         type: 'line',
+        connectNulls: false,
         symbol: 'none',
         datasetId: '1',
         color: '#D6B0FF',
@@ -81,6 +90,7 @@ function AreaEchart(props) {
       },
       {
         type: 'line',
+        connectNulls: false,
         symbol: 'none',
         datasetId: '2',
         encode: {
@@ -92,6 +102,7 @@ function AreaEchart(props) {
       },
       {
         type: 'line',
+        connectNulls: false,
         symbol: 'none',
         datasetId: '3',
         color: '#D6B0FF',
@@ -108,6 +119,7 @@ function AreaEchart(props) {
       },
       {
         type: 'line',
+        connectNulls: false,
         symbol: 'none',
         datasetId: '4',
         color: '#EAD2FF',

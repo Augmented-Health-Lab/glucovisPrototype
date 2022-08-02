@@ -29,14 +29,15 @@ function LineEchart(props) {
       nameLocation: 'middle',
       axisLabel: {
         interval: 35,},
-      min:0,
+      min:-1,
       max:288,
-      
     },
     yAxis: {
       name: 'mg/dL',
       type: 'value',
-      interval: 50
+      interval: 50,
+      min:0,
+      max:401,
     },
     series: [
       {
